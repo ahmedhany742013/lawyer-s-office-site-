@@ -1,3 +1,3 @@
-# lawyer-s-office-site-
+# lawyer-office-site-
 this site is Designed by
  html, css,bootstrap
