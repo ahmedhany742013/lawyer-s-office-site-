@@ -1,2 +1,3 @@
 # lawyer-s-office-site-
-this site is disgin html, css,bootstrap
+this site is Designed by
+ html, css,bootstrap
