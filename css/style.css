@@ -1,0 +1,489 @@
+
+
+/* comand*/
+/*
+-opactity haver
+-genral header
+-section paddeing 
+-haverd effect 1
+-haverd effect 2
+
+*/
+
+
+*
+{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+direction: rtl;
+scroll-behavior: smooth;
+
+}
+
+.rtl-efect
+{
+    
+position: relative;
+}
+
+.rtl-efect:after
+{
+   position: absolute;
+    content: "";
+    width:0;
+  
+    background: #333;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+z-index: -2;
+    transition: width 0.5s;
+}
+.rtl-efect:hover:after
+{
+    width: 100%;
+    
+    
+}
+
+.header
+{
+    
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background:rgb(0 ,0, 0 ,0.6) ;
+    
+}
+.container{  
+    
+    width: 80%;
+   height: 40px;
+    margin : auto;
+  
+}
+.header .nav li
+{
+    display: inline-block;
+    list-style: none;
+    float: right;
+}
+
+.header .logo img
+{
+    width: 60%;
+    margin-top: 10px;
+}
+.logo 
+{
+width 40% ;       
+ float: left;
+
+}
+body
+{
+    font-family: "Jomhuria";
+    font-size: 30px;
+ color: white;
+}
+
+
+.nav
+{
+    width: 60%;
+     list-style: none;
+    float: right;
+     
+}
+
+
+.clear
+{
+    
+    clear: both;
+}
+.logo img
+{
+    
+    width: 30%;
+}
+
+
+
+.header .nav li a 
+{
+    font-size: 30px;
+    display: block;
+ padding: 20;
+    color: white;
+    text-decoration: none;
+
+}
+.header .nav li a:after
+{
+    content: "";
+    display: block;
+    width: 0px;
+    height: 3px;
+    background-color: #6195ff;
+    transition: width .5s;
+}
+.header .nav li a:hover:after
+{
+   width: 100%; 
+    
+}
+.header .nav li a.activ:after
+{
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: #6195ff;
+    transition: width .5s;
+}
+.home
+{
+height: 100vh;
+    background-image: url(../image/Background/vvvvv.jpg);
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  position: relative;
+}
+
+.overlay
+{
+    
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+   
+    
+}
+.hover-opacity
+{
+    transition: opacity.5s;
+    
+}
+
+.hover-opacity:hover
+{
+    
+   opacity: 0.8;
+    
+}
+
+.home .title
+{
+    
+    color: white;
+    font-size:4rem;
+}
+
+.home-content
+{
+
+position: relative;
+    top: 30%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+}
+.home .home-desc
+{
+    font-size: 50px;
+    color: white;
+}
+.home .btn
+{
+   min-width: 160px;
+    min-height: 40px;
+    margin: 10px;
+    padding:  15px,0;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    font-size: 20px;
+    
+    
+}
+.home .btn .btncontact
+{
+    background-color: white;
+    
+}
+
+.home .btnbewithus
+{
+    
+   background-color: #6195ff;
+    color: white;
+}
+
+
+.section-header
+{
+    
+    text-align: center;
+
+    margin-bottom:20px ; 
+}
+.section-header .section-title
+{
+    
+    font-size: 35pt;
+    margin-bottom: 7px;
+}
+.section-header .line
+{
+    display: block;
+    height: 5px;
+    width: 70px;
+    background-color: #6195ff;
+    margin:  0 auto 70px auto;
+    
+    
+}
+.pd-y
+{
+    padding: 20px 0;
+    
+    margin: 40px ;
+    margin-bottom: 45%;
+}
+.about
+{
+    
+ 
+}
+.about-content
+{
+    overflow: hidden;
+
+}
+
+.about-item
+{
+    width: 30%;
+    float:right;
+text-align: center;
+    border: 2px solid black;
+    padding: 30px 15px;
+    margin-bottom: 5%
+}
+
+.about-item.mg
+{
+    margin: 0% 5%;
+
+}
+
+.about-item:hover
+{
+ color:white;
+    
+}
+
+.whous
+{
+
+}
+
+.us-item
+{
+    width: 50%;
+    float: right;
+        
+}
+.us-list
+{
+    direction: rtl;
+    
+}
+
+.us-item .section-header
+{
+    text-align: right;
+}
+.us-item .section-header .line
+{
+    margin: 0 0 70px 0;
+    float: right;
+
+}
+.usprgraph
+{
+   direction: rtl;
+    padding-left: 50px;
+    color: white;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-size: 25pt;
+    text-align: center;
+}
+.us-photo img
+{
+    width: 100%;
+    
+}
+.footer-links
+{
+    list-style: none;
+   margin: 30px;
+}
+.footer-links li
+{
+    display: inline-block;
+
+direction: rtl;    
+}
+.footer-links li a
+{
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    color: white;
+    background:#6195ff; 
+      margin: 7px;  
+    border-radius: 70px;
+
+}
+..footer-links li a i
+{
+    line-height: 50px;
+    
+    background-color: #1c1d23;
+
+}
+footer
+{  
+    background-color: #1c1d23;
+    text-align: center;
+    height: 30%;
+  width:100%;
+   
+}
+
+.contactusimg
+{
+        width :50%;
+    
+    float: left;
+
+    
+
+}
+.contactusimg p button
+{ 
+    height: 40px;
+    width: 30%;
+    margin-right: 150px;
+    text-align: center;
+     border: 3px solid black;
+    border-radius: 60px;
+    font-size: 20pt;
+}
+.contuctusmali
+{
+width: 40%;
+ 
+ 
+}
+.contucticon 
+{
+    border: 2px  solid black; 
+     float: right;
+ border-radius: 60px;
+
+ padding: 15px;
+    direction: rtl;
+
+    float: right;
+    
+}
+.contuctusmali i
+{
+    margin-bottom: 30px;
+ margin-left: 10px;
+    font-size: 20pt;
+color: white;
+}
+
+.contucticon1
+{
+    margin-top: 30px;
+      border: 2px  solid black; 
+     float: right;
+ border-radius: 60px;
+    padding: 15px;
+}
+.contuctusmali1
+{
+    text-align: center;
+    margin: 10% 10%;
+    font-size: 46pt;
+       border: 2px  solid black; 
+     border-radius: 60px;
+}
+.contuctusmali1 i
+{
+    margin-bottom: 5%;
+}
+
+.pd-x
+{
+    padding: 150px 0;
+    
+    
+    margin-bottom: 45%;
+}
+.logo1
+{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.textsize
+{
+    
+    font-size: 30pt;
+    margin: 30px;
+}
+.textsize input
+{
+    height: 30px;
+    width:200px;
+    text-align: right;
+}
+.tdd
+{
+    
+    width: 100%;
+    height: 150px;
+    
+}
+
+.withus-item button
+{
+    height: 30px ;
+   width: 100px;
+    font-size: 20pt;
+    margin-right: 50%;
+    margin-top: 10;
+    
+}
+.imgindex
+{
+text-align: center;
+    margin-top: 350px;
+
+    
+}
